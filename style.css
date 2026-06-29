@@ -1,0 +1,301 @@
+/* Base Style Setup */
+body {
+    font-family: 'Hanuman', sans-serif;
+    background-color: #fcf8f2;
+    margin: 0;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.invitation-container {
+    background: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Typography Rules */
+.title-moul {
+    font-family: 'Moul', sans-serif;
+    color: #b11116;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.parents-section-title {
+    font-family: 'Moul', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.parents-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.side-title {
+    font-family: 'Moul', sans-serif;
+    display: block;
+    color: #b11116;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.parent-names {
+    font-weight: bold;
+    color: #222;
+}
+
+.ceremony-text {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #444;
+}
+
+.honorific-highlight {
+    color: #b11116;
+    font-weight: bold;
+}
+
+/* Couple Info Style */
+.couple-container {
+    background: #fdf6ec;
+    border: 1px dashed #d4af37;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.couple-label {
+    font-size: 13px;
+    color: #777;
+}
+
+.couple-name {
+    font-family: 'Moul', sans-serif;
+    font-size: 22px;
+    color: #b11116;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.and-connector {
+    font-family: 'Freehand', cursive;
+    font-size: 24px;
+    color: #d4af37;
+    margin: 5px 0;
+}
+
+/* Date and Time Layout */
+.datetime-section {
+    margin: 20px 0;
+}
+
+.datetime-title {
+    font-family: 'Moul', sans-serif;
+    color: #333;
+    font-size: 15px;
+}
+
+.datetime-date {
+    font-size: 16px;
+    color: #222;
+    line-height: 1.6;
+}
+
+.lunar-date {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Timeline/Program Control */
+.program-wrapper {
+    margin: 25px 0;
+}
+
+.btn-program-toggle {
+    background: #b11116;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-family: 'Hanuman', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-program-toggle:hover {
+    background: #8f0d11;
+}
+
+.timeline-container {
+    max-height: 1500px;
+    opacity: 1;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.4s ease;
+    margin-top: 20px;
+    text-align: left;
+    background: #fffdf9;
+    border-left: 3px solid #d4af37;
+    padding: 10px 15px;
+}
+
+.timeline-container.collapsed {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.timeline-main-title {
+    font-family: 'Moul', sans-serif;
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.timeline-item {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.time-badge {
+    background: #d4af37;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.timeline-content {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.timeline-content a {
+    color: #b11116;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.timeline-content a:hover {
+    text-decoration: underline;
+}
+
+.highlight-banquet {
+    background: rgba(212, 175, 55, 0.08);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+/* Location Area */
+.location-section {
+    margin-top: 25px;
+}
+
+.location-title {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+
+.location-name {
+    font-family: 'Moul', sans-serif;
+    font-size: 18px;
+    color: #b11116;
+    display: block;
+    margin: 5px 0;
+}
+
+.location-sub {
+    font-size: 13px;
+    color: #666;
+}
+
+.blessing {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #444;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Graphics Wrappers */
+.khmer-sticker-header img,
+.khmer-sticker-footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Section Rules */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 15px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.8;
+    margin: 5px 0;
+}
+
+/* Scroll To Top Action Trigger Style */
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background: #b11116;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-family: 'Hanuman', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#scrollTopBtn:hover {
+    background: #333;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .parents-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

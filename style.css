@@ -1,6 +1,10 @@
+/* =====================================================================
+   Bilingual Tea Ceremony & Wedding Invitation Stylesheet (style.css)
+   ===================================================================== */
+
 /* Base Style Setup */
 body {
-    font-family: 'Hanuman', sans-serif;
+    font-family: 'Hanuman', 'Poppins', sans-serif;
     background-color: #fcf8f2;
     margin: 0;
     padding: 20px 10px;
@@ -12,11 +16,11 @@ body {
 
 .invitation-container {
     background: #ffffff;
-    max-width: 600px;
+    max-width: 650px;
     width: 100%;
     border: 2px solid #d4af37;
     border-radius: 15px;
-    padding: 25px;
+    padding: 30px 25px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     text-align: center;
     box-sizing: border-box;
@@ -24,18 +28,35 @@ body {
 
 /* Typography Rules */
 .title-moul {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', cursive;
     color: #b11116;
     font-size: 20px;
     line-height: 1.6;
-    margin: 20px 0;
+    margin: 15px 0 5px 0;
+}
+
+.title-english {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #8c7321;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
 }
 
 .parents-section-title {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', cursive;
     font-size: 16px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.parents-title-en {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
 }
 
 .parents-grid {
@@ -47,12 +68,25 @@ body {
     margin-bottom: 25px;
 }
 
+.parent-column {
+    text-align: center;
+}
+
 .side-title {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', cursive;
     display: block;
     color: #b11116;
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+}
+
+.side-title-en {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    color: #8c7321;
+    margin-bottom: 6px;
+    font-style: italic;
 }
 
 .parent-names {
@@ -60,11 +94,37 @@ body {
     color: #222;
 }
 
+.text-muted {
+    color: #777;
+    font-size: 12px;
+}
+
+.ceremony-text-wrapper {
+    margin: 20px 0;
+}
+
 .ceremony-text {
     font-size: 15px;
     line-height: 1.8;
     text-align: justify;
     color: #444;
+    margin-bottom: 10px;
+}
+
+.ceremony-text-en {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #555;
+    font-weight: 300;
+}
+
+.text-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
+    margin: 12px auto;
+    width: 60%;
 }
 
 .honorific-highlight {
@@ -77,26 +137,35 @@ body {
     background: #fdf6ec;
     border: 1px dashed #d4af37;
     border-radius: 10px;
-    padding: 15px;
-    margin: 20px 0;
+    padding: 20px 15px;
+    margin: 25px 0;
 }
 
 .couple-label {
     font-size: 13px;
-    color: #777;
+    color: #666;
 }
 
 .couple-name {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', cursive;
     font-size: 22px;
     color: #b11116;
-    display: inline-block;
-    margin: 5px 0;
+    display: block;
+    margin: 4px 0 0 0;
+}
+
+.couple-name-en {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .and-connector {
     font-family: 'Freehand', cursive;
-    font-size: 24px;
+    font-size: 28px;
     color: #d4af37;
     margin: 5px 0;
 }
@@ -107,15 +176,30 @@ body {
 }
 
 .datetime-title {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', cursive;
     color: #333;
     font-size: 15px;
+}
+
+.datetime-title-en {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #666;
 }
 
 .datetime-date {
     font-size: 16px;
     color: #222;
     line-height: 1.6;
+    margin-top: 8px;
+}
+
+.datetime-date-en {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #555;
+    margin-top: 4px;
 }
 
 .lunar-date {
@@ -134,18 +218,19 @@ body {
     color: #fff;
     border: none;
     border-radius: 25px;
-    padding: 12px 25px;
-    font-family: 'Hanuman', sans-serif;
-    font-size: 15px;
+    padding: 12px 20px;
+    font-family: 'Hanuman', 'Poppins', sans-serif;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    transition: background 0.3s ease, transform 0.2s ease;
     width: 100%;
 }
 
 .btn-program-toggle:hover {
     background: #8f0d11;
+    transform: translateY(-1px);
 }
 
 .timeline-container {
@@ -157,7 +242,8 @@ body {
     text-align: left;
     background: #fffdf9;
     border-left: 3px solid #d4af37;
-    padding: 10px 15px;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
 }
 
 .timeline-container.collapsed {
@@ -165,12 +251,14 @@ body {
     opacity: 0;
     padding-top: 0;
     padding-bottom: 0;
+    border-left-color: transparent;
 }
 
 .timeline-main-title {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', cursive;
     font-size: 13px;
     color: #444;
+    margin-top: 0;
     margin-bottom: 15px;
 }
 
@@ -201,7 +289,7 @@ body {
     color: #b11116;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.2s;
+    transition: color 0.2s ease;
 }
 
 .timeline-content a:hover {
@@ -209,9 +297,9 @@ body {
 }
 
 .highlight-banquet {
-    background: rgba(212, 175, 55, 0.08);
-    padding: 6px;
-    border-radius: 5px;
+    background: rgba(212, 175, 55, 0.12);
+    padding: 10px;
+    border-radius: 6px;
 }
 
 /* Location Area */
@@ -226,24 +314,52 @@ body {
 }
 
 .location-name {
-    font-family: 'Moul', sans-serif;
+    font-family: 'Moul', cursive;
     font-size: 18px;
     color: #b11116;
     display: block;
-    margin: 5px 0;
+    margin: 5px 0 2px 0;
+}
+
+.location-name-en {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 4px;
 }
 
 .location-sub {
+    display: block;
     font-size: 13px;
     color: #666;
+}
+
+.location-sub-en {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+}
+
+.blessing-section {
+    margin: 25px 0;
 }
 
 .blessing {
     font-size: 14px;
     line-height: 1.8;
     color: #444;
-    margin: 20px 0;
     font-style: italic;
+}
+
+.blessing-en {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 6px;
 }
 
 /* Graphics Wrappers */
@@ -280,12 +396,13 @@ footer p {
     background: #b11116;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 16px;
     border-radius: 50px;
-    font-family: 'Hanuman', sans-serif;
+    font-family: 'Hanuman', 'Poppins', sans-serif;
     font-size: 12px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.2s ease;
 }
 
 #scrollTopBtn:hover {
@@ -297,5 +414,11 @@ footer p {
     .parents-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    .invitation-container {
+        padding: 20px 15px;
+    }
+    .title-moul {
+        font-size: 18px;
     }
 }
